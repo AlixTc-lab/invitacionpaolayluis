@@ -1108,6 +1108,8 @@ box-shadow:
 0 8px 25px rgba(0,0,0,.08);
 
 transition:.4s;
+box-sizing: border-box;
+    max-width: 100%;
 
 }
 
@@ -1196,7 +1198,21 @@ font-size:20px;
 
 }
 
+/* cambios  */
+@media (max-width: 768px){
 
+.parents-grid{
+    grid-template-columns: 1fr;
+}
+
+.parent-card{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+}
 
 
 
