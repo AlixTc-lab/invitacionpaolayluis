@@ -540,13 +540,17 @@ line-height:2;
 /* CONFIRMACION */
 
 /* =========================
-CONFIRMACION PREMIUM
+CONFIRMACION PREMIUM (FIX RESPONSIVE)
 ========================= */
 
 .confirm-box{
 text-align:center;
 position:relative;
 overflow:hidden;
+
+/* 🔥 FIX IMPORTANTE */
+padding: 10px;
+box-sizing: border-box;
 }
 
 /* ICONO */
@@ -587,10 +591,16 @@ animation:pulseWhatsapp 2s infinite;
 
 display:inline-flex;
 align-items:center;
+justify-content:center;
+
 gap:12px;
 
 margin-top:30px;
-padding:18px 35px;
+padding:18px 28px;
+
+/* 🔥 FIX RESPONSIVE */
+max-width: 100%;
+width: fit-content;
 
 border-radius:50px;
 
@@ -611,6 +621,9 @@ transition:.4s;
 box-shadow:
 0 10px 25px rgba(37,211,102,.30);
 
+/* 🔥 EVITA DESBORDES */
+box-sizing: border-box;
+white-space: nowrap;
 }
 
 /* ICONO DENTRO DEL BOTON */
@@ -648,9 +661,24 @@ transform:scale(1);
 
 }
 
+/* =========================
+PARA MÓVIL
+========================= */
 
+@media (max-width: 768px){
 
+.whatsapp-btn{
+    font-size:18px;
+    padding:16px 20px;
+}
 
+.confirm-icon{
+    width:80px;
+    height:80px;
+    font-size:34px;
+}
+
+}
 
 
 
