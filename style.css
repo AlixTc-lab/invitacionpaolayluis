@@ -18,32 +18,19 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Montserrat', sans-serif;
-overflow-x:hidden;
-color:var(--texto);
+    font-family:'Montserrat', sans-serif;
+    overflow-x:hidden;
+    color:var(--texto);
 
-background: linear-gradient(
--45deg,
-#f9f4f0,
-#F2C1B7,
-#C98F56,
-#f3e5de
-);
+  
 
-background-size: 400% 400%;
-animation: gradientShift 18s ease infinite;
+    position:relative;
 
-position:relative;
-
-/* 👇 IMPORTANTE */
-display:flex;
-flex-direction:column;
-min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
-
-/* =========================
-   NEBLINA LUXURY (VISIBLE)
-========================= */
+/* meblina */
 
 body::before{
 content:"";
@@ -174,6 +161,7 @@ margin:auto;
 
 section{
 padding:110px 20px;
+background-color: #9E3B2B;
 }
 
 h1,h2,h3{
@@ -193,7 +181,7 @@ align-items:center;
 
 background:
 linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-url('cover.jpeg') center/cover;
+url('cover.png') center/cover;
 
 backdrop-filter:blur(5px);
 
@@ -355,7 +343,22 @@ margin-bottom:60px;
 .section-title h2{
 font-size:60px;
 color:var(--terracota-dark);
+/* color de letra de titulos  */
 }
+
+
+.section-title2{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title2 h2{
+font-size:60px;
+color:var(--crema);
+/* color de letra de titulos  */
+}
+
+
 
 /* TIMER */
 
@@ -410,6 +413,7 @@ font-weight:700;
 
 .message{
 text-align:center;
+background-color:#F2C1B7 /* fondo del mensaje */
 }
 
 .message p{
@@ -417,6 +421,7 @@ max-width:900px;
 margin:auto;
 font-size:24px;
 line-height:2;
+color: var(--crema);/* color de letra de mensaje */
 }
 
 /* CARDS */
@@ -450,7 +455,7 @@ box-shadow:
 .card h3{
 font-size:36px;
 margin-bottom:15px;
-color:var(--terracota-dark);
+color:var(--crema);/* movi esto por color de letras */
 }
 
 /* UBICACIONES */
@@ -496,7 +501,7 @@ padding:35px;
 
 .location-content h3{
 font-size:45px;
-color:var(--terracota-dark);
+color:var(--crema);/* color de letra de ubicaciones */
 }
 
 /* BOTONES */
@@ -528,6 +533,7 @@ transform:translateY(-5px);
 
 .gift{
 text-align:center;
+background-color: #F2C1B7;
 }
 
 .gift p{
@@ -535,6 +541,7 @@ max-width:900px;
 margin:auto;
 font-size:23px;
 line-height:2;
+color: var(--terracota-dark);/* ouse esto */
 }
 
 /* CONFIRMACION */
@@ -662,7 +669,7 @@ transform:scale(1);
 }
 
 /* =========================
-PARA MÓVIL
+🔥 FIX EXTRA PARA MÓVIL
 ========================= */
 
 @media (max-width: 768px){
@@ -989,7 +996,7 @@ overflow:hidden;
 
 font-size:55px;
 
-color:var(--terracota);
+color:var(--terracota-dark);/* color del corazon */
 
 margin-bottom:15px;
 
@@ -1007,7 +1014,7 @@ font-style:italic;
 
 font-size:28px;
 
-color:var(--terracota-dark);
+color:var(--terracota-dark);/* color de letra */
 
 margin-bottom:35px;
 
@@ -1025,6 +1032,7 @@ font-size:24px;
 line-height:2;
 
 max-width:850px;
+color: var(--terracota-dark);/* color  letra parrafo  */
 
 margin:auto;
 
@@ -1097,7 +1105,7 @@ overflow:hidden;
 
 font-size:50px;
 
-color:var(--terracota);
+color:var(--terracota-dark);
 
 margin-bottom:35px;
 
@@ -1156,7 +1164,7 @@ box-shadow:
 
 font-size:38px;
 
-color:var(--terracota-dark);
+color:var(--terracota-dark);/* movi esto de color  */
 
 margin-bottom:15px;
 
@@ -1191,6 +1199,7 @@ opacity:.7;
 font-size:24px;
 
 line-height:2;
+color: var(--terracota-dark);/* color de letra de padres  */
 
 }
 
@@ -1251,6 +1260,7 @@ UBICACIONES PREMIUM
 
 .locations-section{
 position:relative;
+background-color: #F2C1B7;
 }
 
 /* CARD */
@@ -1383,6 +1393,7 @@ line-height:1.2;
 .location-info p{
 
 font-size:21px;
+color: var(--terracota-dark);/* color de letra de info  */
 
 line-height:1.8;
 
